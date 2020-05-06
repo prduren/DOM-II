@@ -1,15 +1,38 @@
 @mobile: ~"(max-width: 500px)";
 
-// Color assignments 
+// Color assignments
 @font-color: @shark;
 @button-bg: @eastern-blue;
-@main-bg:  @white;
+@main-bg: @white;
 @navigation-border: @silver;
 @footer-bg: @sandy-beach;
 
 // Colors
-@white: #FFFFFF;
-@silver: #C0C0C0;
+@white: #ffffff;
+@silver: #c0c0c0;
 @shark: #212529;
-@eastern-blue: #17A2B8;
-@sandy-beach: #FFEBCD;
+@eastern-blue: #17a2b8;
+@sandy-beach: #ffebcd;
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.large {
+  transform: scale(1.3);
+}
+
+img {
+  background: #fe9;
+  border-radius: 1em;
+  display: inline-block;
+  padding: 1em;
+  transform: scale(0.9);
+  transform-origin: 0 0;
+  transition: transform 0.6s;
+}
